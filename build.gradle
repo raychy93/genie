@@ -1,0 +1,69 @@
+
+
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+
+
+group 'com.mywebsite'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+    jcenter()
+}
+
+
+mainClassName = 'com.mywebsite.Main'
+
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation 'net.dv8tion:JDA:4.2.1_253'
+    implementation group: 'me.duncte123', name: 'botCommons', version: '1.0.45'
+    implementation group: 'com.zaxxer', name: 'HikariCP', version: '4.0.3'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.32.3.3'
+    implementation  group: 'org.pircbotx', name: 'pircbotx', version: '2.0.1'
+    implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '6.1.0.jre7'
+    //implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc_auth', version: '9.3.0.x86-preview'
+    implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc_auth', version: '9.2.1.x86'
+    //implementation group: 'com.microsoft.sqlserver', name: 'sqljdbc_xa', version: '6.0.8112'
+
+
+    compile 'io.github.cdimascio:dotenv-java:2.2.0'
+
+    compile 'com.jagrosh:jda-utilities:3.0.5'
+
+    compile("net.dv8tion:JDA:4.2.1_253")
+    // Notice that the dependency notation ends with "-command"
+    compile 'com.jagrosh:jda-utilities-command:3.0.5'
+
+
+
+}
+
+task stage(dependsOn: ['build', 'shadowJar', 'clean', 'test'])
+build.mustRunAfter clean
+build.mustRunAfter test
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Class-Path': '/libs/my-jda-bot-1.0-SNAPSHOT.jar','Main-Class': 'Main'
+
+    }
+
+}
+
