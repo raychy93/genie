@@ -39,15 +39,8 @@ public class Main extends ListenerAdapter {
 
 
 
-//ODE4MzYyNzgwNTAyNDU4NDM4.YEW9uw.sbb1tVOXaXY7ftoB10wGda3fhd4
 
-        //ODMzMTAxNTAzOTA4MTUxMzA3.YHtcPA.yg3BwVKMZCye1XzusIaeOMPGwt4
-        //ODQ2MTY4NTQzMDgyOTcxMTM3.YKrl3Q.sZ0e7Ko6FwGj_nsUF-mJ6AyJaQg
-        //ODM2ODUxNTgzMzExNTQ0Mzgw.YIkAxQ.XTjke-uv0V9WYAa1NiS5gUHyjJU kemet genie
-        // bot ODM2ODUxNTgzMzExNTQ0Mzgw.YIkAxQ.XTjke-uv0V9WYAa1NiS5gUHyjJU
-        // ODQ3NTY0OTQ3NzUxNjk4NDUz.YK_6Xg.pZ2B9gPkMXM1nC282HOFBE0nFsU wolf
-        // ODQ4NDE4NjkxNTE0MTA1ODU3.YLMVeg.sEMIKgRCBuEAKdikqsBfykD-W0I
-    String token = "ODM2ODUxNTgzMzExNTQ0Mzgw.YIkAxQ.XTjke-uv0V9WYAa1NiS5gUHyjJU";
+    String token = "***";
 
         JDA a =  JDABuilder.createDefault(token)
             //.setToken(Config.get("ODMzMTAxNTAzOTA4MTUxMzA3.YHtcPA.yg3BwVKMZCye1XzusIaeOMPGwt4"))
