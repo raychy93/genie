@@ -43,7 +43,7 @@ public class Main extends ListenerAdapter {
     String token = "***";
 
         JDA a =  JDABuilder.createDefault(token)
-            //.setToken(Config.get("ODMzMTAxNTAzOTA4MTUxMzA3.YHtcPA.yg3BwVKMZCye1XzusIaeOMPGwt4"))
+           
             .setMemberCachePolicy(MemberCachePolicy.ALL.and(MemberCachePolicy.VOICE))
             //.setChunkingFilter(ChunkingFilter.ALL)
             .enableIntents(GatewayIntent.GUILD_MEMBERS)
