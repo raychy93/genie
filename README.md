@@ -1,0 +1,2 @@
+# genie
+This is a fun bot that entails generic commands. However, this bot also entails a specific lore. The lore has to do with a fun fictional character named Owl. The user is essentially using clues from this bot to peak an interest in order to find this character, and "free" the Owl from its cage. The bot will lead the user through two servers, where in the final server, if the user has a specific role, they will be able to use the command $release, as a means to free the Owl from the cage. Hence "winning" the game.
