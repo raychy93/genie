@@ -22,7 +22,7 @@ public class Babylon extends Command {
 
     @Override
     protected void execute(CommandEvent event) {
-        File file = new File("C:\\Users\\chyra\\OneDrive\\Pictures\\bab.jpg");
+        File file = new File("[insert file path]");
         try {
 
             event.getGuild().getManager().setIcon(Icon.from(file)).queue();
