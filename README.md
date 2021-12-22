@@ -24,5 +24,5 @@ $forbes: Lists 10 richest users in the server.  <br />
 $money: Lists amount of money user has in wallet.  <br />
  
 **clone repo** </br>
-**build dependencies on Java IDE** </br>
-**run**</br>
+**javac Main.java or build dependencies on Java IDE** </br>
+**java Main.java or run on IDE**</br>
